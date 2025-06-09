@@ -155,3 +155,158 @@ main{
     font-size: 23px;
     text-decoration: none;
 }
+
+.tab-text:hover{
+    text-decoration: underline;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    height: 78vh;
+}
+
+.projects{
+    margin: 20px 0;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projects-text{
+    font-size: 1.5em;
+    opacity: 0.85;
+}
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    height: 100%;
+}
+
+.card{
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    height: 100%;
+    gap: 10px;
+    border-left: 10px solid #f0b42a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 10px 30px;
+    padding-left: -10px;
+    margin-bottom: 10px;
+}
+
+.card-content p{
+    color: grey;
+}
+
+.card-icons{
+    align-self: flex-end;
+    display: flex;
+    gap: 30px;
+}
+
+.card svg{
+    opacity: 0.8;
+    height: 50px;
+    padding: 10px;
+}
+
+.card-icons svg:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+}
+
+.card:hover{
+    box-shadow: 0 5px 20px grey;
+}
+
+.right-section{
+    margin: 20px 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.announcements{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.announcements-card{
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sep{
+    background: grey;
+    width: 100%;
+    height: 2px;
+    opacity: 0.2;
+    border-radius: 10px;
+}
+
+.announcements h3{
+    font-size: 1.5em;
+    opacity: 0.85;
+}
+
+.announcements-card p{
+    color: grey;
+    font-size: 0.9em;
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.trending-card{
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 30px;
+}
+
+.trending-card .section{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.trending-card img{
+    height: 40px;
+}
+
+
+.trending-card .user-id{
+    font-size: 0.9em;
+}
+.trending-card .user-project{
+    font-size: 13px;
+    color: grey;
+}   
